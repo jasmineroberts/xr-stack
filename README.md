@@ -1,4 +1,4 @@
-# Understanding the XR Technology Burger
+# Understanding the XR Technology Stack
 
 There are a myriad of options for developing immersive experience and the details complex. It seems as if biweekly, there are new SDKs, frameworks and technologies introduced to XR (Augmented, Virtual and Mixed Reality) developers. 
 
