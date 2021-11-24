@@ -100,8 +100,9 @@ Android https://developer.android.com/ \
 Azure https://azure.microsoft.com/ \
 iOS https://developer.apple.com/ios/ \
 Lens Studio https://www.lensstudio.snapchat.com/    
-Omniverse https://developer.nvidia.com/nvidia-omniverse-platform/   
-Roblox https://www.roblox.com/create/    
+Omniverse https://developer.nvidia.com/nvidia-omniverse-platform/ \
+PlayCanvas https://playcanvas.com/ \
+Roblox https://www.roblox.com/create/ \
 Spark AR https://sparkar.facebook.com/ar-studio/ \
 Unity https://unity.com/ (also see [Unity MARS](https://unity.com/products/unity-mars)) \
 Unreal https://www.unrealengine.com/ \
