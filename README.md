@@ -34,6 +34,7 @@ RealityKit https://developer.apple.com/documentation/realitykit \
  
 ### SDKs
 ARCore https://developers.google.com/ar/ \
+ARKit https://developer.apple.com/augmented-reality/ \
 CameraKit SDK https://kit.snapchat.com/camera-kit \
 Cloud XR SDK https://developer.nvidia.com/nvidia-cloudxr-sdk \
 Easy AR https://www.easyar.com/ \
