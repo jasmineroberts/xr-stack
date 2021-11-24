@@ -23,6 +23,7 @@ Adobe Aero www.adobe.com/products/aero.html \
 AngularJS https://angularjs.org/ \
 AR.js https://developer.vuforia.com/downloads/sdk \
 BabylonJS https://www.babylonjs.com/ \
+JanusWeb https://github.com/jbaicoianu/janusweb \
 JavaScript https://www.javascript.com/ \
 PrimroseVR https://www.primrosevr.com/ \
 React XR https://www.npmjs.com/package/react-vr \
