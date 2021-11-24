@@ -25,7 +25,7 @@ AR.js https://developer.vuforia.com/downloads/sdk \
 BabylonJS https://www.babylonjs.com/ \
 JavaScript https://www.javascript.com/ \
 PrimroseVR https://www.primrosevr.com/ \
-React VR https://www.npmjs.com/package/react-vr \
+React XR https://github.com/pmndrs/react-xr \
 Reality Composer https://apps.apple.com/us/app/reality-composer/id1462358802 \
 RealityKit https://developer.apple.com/documentation/realitykit \
 
