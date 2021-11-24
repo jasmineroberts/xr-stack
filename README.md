@@ -28,7 +28,7 @@ PrimroseVR https://www.primrosevr.com/ \
 React VR https://www.npmjs.com/package/react-vr \
 Reality Composer https://apps.apple.com/us/app/reality-composer/id1462358802 \
 RealityKit https://developer.apple.com/documentation/realitykit \
-threeJS https://github.com/mrdoob/three.js/
+
  
  
 ### SDKs
@@ -36,8 +36,8 @@ ARCore https://developers.google.com/ar/ \
 CameraKit SDK https://kit.snapchat.com/camera-kit \
 Cloud XR SDK https://developer.nvidia.com/nvidia-cloudxr-sdk \
 Easy AR https://www.easyar.com/ \
-Google VR SDK https://developers.google.com/vr/develop/unity/get-started-android \
-LightShip https://lightship.dev/ \
+Google VR SDK (now Cardboard SDK) https://developers.google.com/vr/develop/unity/get-started-android \
+LightShip ARDK https://lightship.dev/ \
 Lumin SDK https://developer.magicleap.com/downloads/lumin-sdk/ \
 Mixed Reality Extension SDK https://github.com/Microsoft/mixed-reality-extension-sdk \
 MRTK https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/ \
@@ -45,6 +45,7 @@ Normcore https://normcore.io/ \
 Oculus SDK https://developer.oculus.com/ \
 OpenVR SDK https://github.com/ValveSoftware/openvr \
 Photon https://www.photounengine.com/sdks \
+Snapdragon Spaces https://www.qualcomm.com/products/features/snapdragon-spaces-xr-platform/ \
 Tobii XR SDK https://vr.tobii.com/sdk/ \
 Vive Sense SDK https://developer.vive.com/resources/vive-sense/ \
 VRTK https://www.vrtk.io/ \
@@ -60,6 +61,7 @@ Mozilla WebVR https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/
 Oculus https://dashboard.oculus.com/app/api \
 Open XR https://www.khronos.org/OpenXR/ \
 WebAudio https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API \
+threeJS https://github.com/mrdoob/three.js/ \
 WebXR https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API 
  
 ### Protocols
@@ -91,7 +93,7 @@ Ruby https://www.ruby-lang.org/en/documentation/ \
 Swift https://www.swift.org/documentation/ 
  
  
-### Platforms
+### Engines/Platforms
 8th Wall Reality Engine https://www.8thwall.com/tutorials \
 Amazon Sumerian https://aws.amazon.com/sumerian/ \
 Android https://developer.android.com/ \
@@ -100,7 +102,6 @@ iOS https://developer.apple.com/ios/ \
 Lens Studio https://www.lensstudio.snapchat.com/    
 Omniverse https://developer.nvidia.com/nvidia-omniverse-platform/   
 Roblox https://www.roblox.com/create/    
-Snapdragon Spaces https://www.qualcomm.com/products/features/snapdragon-spaces-xr-platform/ \
 Spark AR https://sparkar.facebook.com/ar-studio/ \
 Unity https://unity.com/ (also see [Unity MARS](https://unity.com/products/unity-mars)) \
 Unreal https://www.unrealengine.com/ \
@@ -126,7 +127,7 @@ Windows Mixed Reality https://www.microsoft.com/en-us/mixed-reality/windows-mixe
                       ████████  ████░░████  ████  ██
                    ██░░██░░░░██░░░░██░░░░██░░░░██░░██        -- BACKEND
                    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
-                     ██████████████████████████████          -- PLATFORMS
+                     ██████████████████████████████          -- ENGINES/PLATFORMS
                    ██████████████████████████████████
               
  
