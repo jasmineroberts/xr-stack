@@ -70,7 +70,9 @@ WebXR https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API
 REST https://docs.github.com/en/rest \
 SOAP https://www.w3.org/TR/soap/ \
 WebRTC https://webrtc.org/ \
-Websockets https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+Websockets https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API \
+ZeroMQ https://zeromq.org/ \
+MQTT https://mqtt.org/
  
 ### Databases
 MySQL https://dev.mysql.com/doc/ \
