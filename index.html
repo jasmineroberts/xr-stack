@@ -1,0 +1,62 @@
+ <head>
+  <link rel="stylesheet" href="styles.css">
+  <title>XR Stack</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="description" content="Navigating the ingredients to build immersive experiences for the Metaverse. ">
+  <meta name="keywords" content="XR Stack, Metaverse, XR, Metaverse Stack, Augmented Reality, Virtual Reality">
+</head> 
+<body>
+
+
+<a class="main_data" href="#"><img src="svg/xrstack.svg" alt=""></a>
+
+<div class="open_modal">
+  <a class="btn-open btn_small" href="#"><img src="svg/info-btn.svg" alt=""></a>
+</div>
+<div class="close_modal another_btn">
+  <a class="btn-close btn_small" href="#"><img src="svg/close-btn.svg" alt=""></a>
+</div>
+
+<!-- modal area  -->
+<div class="modal-wrapper">
+  <div class="modal">
+    <div class="clear"></div>
+    <div class="content">
+      <p>This infographic is intended to illustrate the current stack to provide better understanding for anyone currently in or aspiring towards augmented, mixed and virtual reality development. Please use this and share this with your students and let me know if anything’s been missed!
+
+        <span>Here is the <a href="https://www.github.com/jasmineroberts/metaverse-stac">Github repo</a> with all of the links!</span>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- modal area  -->
+
+
+
+<!-- script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+  
+$(document).ready(function() {
+  
+	$('.btn-open').click(function() {
+		$('.modal-wrapper').addClass('open')
+	});
+  
+	$('.btn-close').click(function() {
+		$('.modal-wrapper').removeClass('open')
+	});
+  $('.btn-open').click(function() {
+		$('.open_modal').removeClass('show');
+		$('.open_modal').addClass('hide');
+		$('.close_modal').addClass('show');
+	});
+  $('.btn-close').click(function() {
+		$('.close_modal').removeClass('show');
+		$('.open_modal').addClass('show');
+	});
+  
+});
+</script>
+</body>
+</html>
