@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <title>AR/VR Development Stack</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
     <meta
       name="description"
       content="Navigating the ingredients to build immersive experiences for the Metaverse. "
@@ -17,7 +16,7 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: #000;
+        background-color: #efefef;
       }
 
       @font-face {
@@ -214,21 +213,37 @@
       .header-nav-item.active {
         color: #e91e63;
       }
+	  
+	  .mobile-display{display:none}
+	  .desktop-display{display:block}
+	  @media (max-width:800px){
+	  . desktop-display {display:none}
+	  . mobile-display {display:block}
+	  }
+	  
     </style>
   </head>
+  
+  <div class="mobile-display">
+  <iframe src="https://drive.google.com/file/d/1rnHk-P2EO1Pz_EzraeAD-1dg_-M9iSPw/view?usp=sharing"></iframe>
+  </div>
+ <div class="desktop-display">
   <body>
     <header class="header">
       <nav class="navbar">
-        <!--<img src="images/burger-2.png" width="22px" alt=""-->XR Stack
-        <sup><img src="images/Cclogocircle.png" width="12px" alt=""></sup>
+        <!--<img src="burger-2.png" width="25px" alt="">--> XR Stack 
+        <sup><img src="png/Cclogocircle.png" width="14px" alt=""></sup>
       </nav>
       <button class="info-button"><marquee><span>INFO</span></marquee></button>
     </header>
 
     <div class="pdf-container">
-  <object data="pdf/xr-stack.pdf" type="application/pdf" frameborder="0" width="100%" height="800px" style="padding: 20px;">
-      <embed src="https://drive.google.com/file/d/1rnHk-P2EO1Pz_EzraeAD-1dg_-M9iSPw/view?usp=sharing" width="100%" height="800px"/> 
-  </object>
+      <object
+        data="pdf/xr-stack.pdf"
+        type="application/pdf"
+        width="100%"
+        height="800px"
+      ></object>
     </div>
     <div class="footer">
       <div class="footer-right">doi: 10.13140/RG.2.2.10465.17769</div>
@@ -248,15 +263,11 @@
           <a href="https://www.github.com/jasmineroberts/xr-stack"
             >GitHub repo</a
           >
-          with the associated links! <a href="Poster/PNG/arvr-stack.png">Click here</a> to view and
+          with the associated links! <a href="">Click here</a> to view and
           download the poster!</span
         >
       </p>
-    </div>
-	
-	<div class="mobile-view">
-	  <iframe src="https://drive.google.com/file/d/1rnHk-P2EO1Pz_EzraeAD-1dg_-M9iSPw/view?usp=sharing" width="100%" height="800" frameborder="0"></iframe>
-	</div>
+    </div></div>
 
     <script>
       const infoButton = document.querySelector(".info-button");
