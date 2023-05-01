@@ -1,62 +1,283 @@
- <head>
-  <link rel="stylesheet" href="styles.css">
-  <title>XR Stack</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <meta name="description" content="Navigating the ingredients to build immersive experiences for the Metaverse. ">
-  <meta name="keywords" content="XR Stack, Metaverse, XR, Metaverse Stack, Augmented Reality, Virtual Reality">
-</head> 
-<body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AR/VR Development Stack</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta
+      name="description"
+      content="Navigating the ingredients to build immersive experiences for the Metaverse. "
+    />
+    <meta
+      name="keywords"
+      content="XR Stack, Metaverse, XR, Metaverse Stack, Augmented Reality, Virtual Reality"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
 
+      @font-face {
+        font-family: "Eina-Regular";
+        src: url("fonts/Eina01-Regular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-<a class="main_data" href="#"><img src="svg/xrstack.svg" alt=""></a>
+      @font-face {
+        font-family: "Eina-italic";
+        src: url("fonts/Eina01-RegularItalic.otf") format("opentype");
+        font-weight: normal;
+        font-style: italic;
+      }
 
-<div class="open_modal">
-  <a class="btn-open btn_small" href="#"><img src="svg/info-btn.svg" alt=""></a>
-</div>
-<div class="close_modal another_btn">
-  <a class="btn-close btn_small" href="#"><img src="svg/close-btn.svg" alt=""></a>
-</div>
+      @font-face {
+        font-family: "Eina-Bold";
+        src: url("fonts/Eina01-Bold.otf") format("opentype");
+        font-weight: bold;
+        font-style: normal;
+      }
 
-<!-- modal area  -->
-<div class="modal-wrapper">
-  <div class="modal">
-    <div class="clear"></div>
-    <div class="content">
-      <p>This infographic is intended to illustrate the current stack to provide better understanding for anyone currently in or aspiring towards augmented, mixed and virtual reality development. Please use this and share this with your students and let me know if anything’s been missed!
+      @font-face {
+        font-family: "Eina-BoldItalic";
+        src: url("fonts/Eina01-BoldItalic.otf") format("opentype");
+      }
 
-        <span>Here is the <a href="https://www.github.com/jasmineroberts/metaverse-stack">GitHub repo</a> with all of the links!</span>
+      @font-face {
+        font-family: "Agrandir";
+        src: url("fonts/Agrandir-GrandMedium.ttf") format("truetype");
+      }
+
+      a:link {
+        color: #000; /* Link color */
+        text-decoration: none; /* Remove underline */
+        font-family: "Eina-Bold"; /* Default font */
+      }
+
+      a:visited {
+        color: black; /* Visited link color */
+        font-family: "Eina-BoldItalic"; /* Default font */
+      }
+
+      a:hover {
+        color: black; /* Hover color */
+        font-family: "Eina-BoldItalic"; /* Default font */
+      }
+
+      a:active {
+        color: black; /* Selected color */
+        font-family: "Eina-Bold-Italic"; /* Change font */
+      }
+
+      .pdf-container {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-family: "Eina-Regular";
+        font-size: 11px;
+        box-sizing: border-box;
+      }
+      .footer-left {
+        font-size: 11px;
+      }
+      .info-button {
+        /* position: absolute;
+        top: 10px;
+        right: 20px; */
+        /* align-self: flex-end; */
+        justify-self: flex-end;
+        width: 85px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #222;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: "Eina-Regular";
+      }
+      .info-button.active {
+        background-color: #000;
+      }
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+        text-align: left;
+        font-family: "Eina-Regular";
+      }
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f00;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      /* New styles for header and button */
+      /* Header */
+      .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 20px;
+        font-family: "Eina-Regular";
+        box-sizing: border-box;
+        border-bottom: 1px solid #eee;
+        font-size: 25px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      .header-logo {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+      }
+
+      .navbar {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .header-nav-item {
+        margin-left: 30px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #333;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .header-nav-item:hover {
+        color: #666;
+      }
+
+      .header-nav-item.active {
+        color: #e91e63;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <!--<img src="images/burger-2.png" width="22px" alt=""-->XR Stack
+        <sup><img src="images/Cclogocircle.png" width="12px" alt=""></sup>
+      </nav>
+      <button class="info-button"><marquee><span>INFO</span></marquee></button>
+    </header>
+
+    <div class="pdf-container">
+      <object
+        data="pdf/xr-stack.pdf"
+        type="application/pdf"
+        width="100%"
+        height="800px"
+      ></object>
+    </div>
+    <div class="footer">
+      <div class="footer-right">doi: 10.13140/RG.2.2.10465.17769</div>
+      <div class="footer-left">made with ☕ by Jasmine Roberts</div>
+    </div>
+    <div class="popup">
+      <p>
+        This resource is intended to detail the current software stack to
+        provide better understanding for anyone currently in or aspiring towards
+        augmented, mixed and virtual reality development. Please use and share
+        this resource with students and enthusiasts!
+      </p>
+
+      <p>
+        <span
+          >Here is the
+          <a href="https://www.github.com/jasmineroberts/xr-stack"
+            >GitHub repo</a
+          >
+          with the associated links! <a href="Poster/PNG/arvr-stack.png">Click here</a> to view and
+          download the poster!</span
+        >
       </p>
     </div>
-  </div>
-</div>
-<!-- modal area  -->
 
+    <script>
+      const infoButton = document.querySelector(".info-button");
+      const popup = document.querySelector(".popup");
+      const popupClose = document.querySelector(".popup-close");
 
+      infoButton.addEventListener("click", function () {
+        if (popup.style.display === "block") {
+          popup.style.display = "none";
+          infoButton.classList.remove("active");
+          infoButton.innerHTML = "<marquee><span>INFO</span></marquee>";
+        } else {
+          popup.style.display = "block";
+          infoButton.classList.add("active");
+          infoButton.innerHTML = "<marquee><span>CLOSE</span></marquee>";
+        }
+      });
 
-<!-- script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script>
-  
-$(document).ready(function() {
-  
-	$('.btn-open').click(function() {
-		$('.modal-wrapper').addClass('open')
-	});
-  
-	$('.btn-close').click(function() {
-		$('.modal-wrapper').removeClass('open')
-	});
-  $('.btn-open').click(function() {
-		$('.open_modal').removeClass('show');
-		$('.open_modal').addClass('hide');
-		$('.close_modal').addClass('show');
-	});
-  $('.btn-close').click(function() {
-		$('.close_modal').removeClass('show');
-		$('.open_modal').addClass('show');
-	});
-  
-});
-</script>
-</body>
+      popupClose.addEventListener("click", function () {
+        popup.style.display = "none";
+        infoButton.classList.remove("active");
+        infoButton.innerHTML = "<span>i</span>";
+      });
+    </script>
+  </body>
 </html>
